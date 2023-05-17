@@ -51,6 +51,7 @@ skins\Thaliz.lua
 skins\TimeManager.lua
 skins\TradesBar.lua
 skins\TrinketMenu.lua
+skins\TurtleCount.lua
 skins\TurtleZoneCount.lua
 skins\YaHT.lua
 skins\ZHunterMod.lua
