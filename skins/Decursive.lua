@@ -1,7 +1,7 @@
 pfUI.addonskinner:RegisterSkin("Decursive", function()
-  local penv = pfUI:GetEnvironment()
-  local hooksecurefunc = penv.hooksecurefunc
-  if pfUI and pfUI.api then
+  if pfUI and pfUI.api and pfUI_config then
+    local penv = pfUI:GetEnvironment()
+    local hooksecurefunc, CreateBackdrop, SkinButton, SkinCheckbox, SkinSlider = penv.hooksecurefunc, penv.CreateBackdrop, penv.SkinButton, penv.SkinCheckbox, penv.SkinSlider
     local frame_table = {
       DecursiveMainBar = {
         buttons = {"Priority", "Skip", "Options", "Hide"},
@@ -82,7 +82,7 @@ pfUI.addonskinner:RegisterSkin("Decursive", function()
       end
     end, 1)
     
-    local tooltip_alpha = tonumber(C.tooltip.alpha)
+    local tooltip_alpha = tonumber(pfUI_config.tooltip.alpha)
     CreateBackdrop(Dcr_Tooltip, nil, nil, tooltip_alpha)
     CreateBackdrop(DcrDisplay_Tooltip, nil, nil, tooltip_alpha)
     CreateBackdrop(Dcr_ScanningTooltip, nil, nil, tooltip_alpha)
