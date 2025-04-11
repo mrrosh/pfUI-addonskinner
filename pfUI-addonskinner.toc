@@ -35,6 +35,7 @@ skins\LevelRange.lua
 skins\LoseControl.lua
 skins\ModifiedPowerAuras.lua
 skins\MTLove.lua
+skins\Outfitter.lua
 skins\pfQuest.lua
 skins\Possessions.lua
 skins\RABuffs.lua
