@@ -34,6 +34,7 @@ skins\ItemRack.lua
 skins\LevelRange.lua
 skins\LoseControl.lua
 skins\ModifiedPowerAuras.lua
+skins\MouseOverSounds.lua
 skins\MTLove.lua
 skins\Outfitter.lua
 skins\pfQuest.lua
