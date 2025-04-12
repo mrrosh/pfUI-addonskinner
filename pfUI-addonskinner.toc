@@ -38,6 +38,7 @@ skins\MTLove.lua
 skins\Outfitter.lua
 skins\pfQuest.lua
 skins\Possessions.lua
+skins\QuickHeal.lua
 skins\RABuffs.lua
 skins\raidTemplate.lua
 skins\RingMenu.lua
