@@ -62,6 +62,7 @@ pfUI:RegisterSkin("QuickHeal", "vanilla", function ()
       }
       local tooltip_alpha = tonumber(pfUI_config.tooltip.alpha)
       for _, frame in pairs(frames) do
+<<<<<<< HEAD
         StripTextures(frame, _, "BACKGROUND")
         CreateBackdrop(frame, _, _, tooltip_alpha)
         CreateBackdropShadow(frame, _, _, tooltip_alpha)
