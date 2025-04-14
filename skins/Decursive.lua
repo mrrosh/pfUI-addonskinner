@@ -22,7 +22,7 @@ pfUI.addonskinner:RegisterSkin("Decursive", function()
         checkboxes_size = 24,
         checkboxes = {
           "PrintDefault", "PrintCustomFrame", "CheckForAbolish", "DoNotBLPrio", "AlwaysUseBestSpell", "RandomOrder", "CurePets",
-          "SkipStealth", "PlaySound", "PrintError", "ShowToolTip", "ReverseLiveDisplay", "HideLL", "TieLL"
+          "SkipStealth", "PlaySound", "PrintError", "ShowToolTip", "ReverseLiveDisplay", "HideLL", "TieLL", "CureMutatingInjection", "CureWyvernSting", "RangeCheck",
         },
       },
       DecursiveAnchor = {
