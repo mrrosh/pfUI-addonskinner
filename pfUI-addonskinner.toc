@@ -14,6 +14,7 @@ pfUI-addonskinner-gui.lua
 
 # skins
 skins\AdvancedTradeskillWindow.lua
+skins\Artisan.lua
 skins\Atlas.lua
 skins\AtlasLoot.lua
 skins\AtlasQuest.lua
