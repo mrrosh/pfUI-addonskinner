@@ -309,10 +309,11 @@ pfUI.addonskinner:RegisterSkin("Artisan", function()
                         else
                             local up = getglobal("ArtisanEditorRightUp"..fin)
                             local clr = TypeColor[f.type]
-                            f.backdrop:SetBackdropColor(.75, .75, 0, .8)
-                            f.backdrop:Show()
                             up:SetBackdropColor(clr.r, clr.g, clr.b, 1)
                         end
+                        f.backdrop:SetBackdropColor(.75, .75, 0, .8)
+                        f.backdrop:Show()
+
                     end
                 end
             end
@@ -424,7 +425,7 @@ pfUI.addonskinner:RegisterSkin("Artisan", function()
                     if not f:IsShown() then return
                     else
                         if f.type == "header" then
-                            getglobal("ArtisanEditorRightUp"..fin):SetBackdropColor(this.rr, this.rg, this.rb, tooltip_alpha)
+                            getglobal("ArtisanEditorRightUp"..fin):SetBackdropColor(this.r, this.g, this.b, tooltip_alpha)
                             f.backdrop:Hide()
                             for k = fin + 1, fin + (getn(ARTISAN_CUSTOM[tabName][fin + offset].childs) ) do
                                 if k > 25 then break end
