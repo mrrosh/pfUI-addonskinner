@@ -23,6 +23,7 @@ skins\BigWigs.lua
 skins\BookStore.lua
 skins\BugSack.lua
 skins\CallToArms.lua
+skins\Clique.lua
 skins\CloseUP.lua
 skins\ColorPickerPlus.lua
 skins\Decursive.lua
@@ -33,6 +34,7 @@ skins\ignitestatus.lua
 skins\ItemHints.lua
 skins\ItemRack.lua
 skins\LevelRange.lua
+skins\LootBlare.lua
 skins\LoseControl.lua
 skins\ModifiedPowerAuras.lua
 skins\MouseOverSounds.lua
@@ -57,5 +59,6 @@ skins\TradesBar.lua
 skins\TrinketMenu.lua
 skins\TurtleCount.lua
 skins\TurtleZoneCount.lua
+skins\UnitXP_SP3_Addon.lua
 skins\YaHT.lua
 skins\ZHunterMod.lua
