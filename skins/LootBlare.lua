@@ -2,8 +2,10 @@ pfUI.addonskinner:RegisterSkin("LootBlare", function()
     -- place main code below
     local penv = pfUI:GetEnvironment()
 
-    local StripTextures, CreateBackdrop, SkinCloseButton, HookScript = 
-  penv.StripTextures, penv.CreateBackdrop, penv.SkinCloseButton, penv.HookScript
+    local StripTextures, CreateBackdrop, SkinCloseButton, HookScript, GetStringColor = 
+  penv.StripTextures, penv.CreateBackdrop, penv.SkinCloseButton, penv.HookScript, penv.GetStringColor
+  local _r, _g, _b, _a = GetStringColor(pfUI_config.appearance.border.background)
+  _r = tonumber(_r) _g = tonumber(_g) _b = tonumber(_b) _a = tonumber(_a)
 
   local function HookButton(b, type)
     
@@ -23,15 +25,13 @@ pfUI.addonskinner:RegisterSkin("LootBlare", function()
         local icon = ItemRollFrame.iconButton
         if icon then
           icon:SetScript("OnEnter", function()
-            local _r, _g, _b, _a = pfUI.api.GetStringColor(pfUI_config.appearance.border.background)--TODO cache val
             GameTooltip.backdrop:SetBackdropColor(_r, _g, _b, (_a + 0) > 0.8 and _a or 1.0)
             GameTooltip:SetOwner(icon, "ANCHOR_RIGHT")
             GameTooltip:SetHyperlink(ItemRollFrame.itemLink)
             GameTooltip:Show()
 
           end)
-          HookScript(icon, "OnLeave", function()
-            local _r, _g, _b, _a = pfUI.api.GetStringColor(pfUI_config.appearance.border.background) --TODO cahce val
+          icon:SetScript("OnLeave", function()
             GameTooltip.backdrop:SetBackdropColor(_r, _g, _b, _a)
             GameTooltip:Hide()
             ShoppingTooltip1:Hide()
